@@ -56,7 +56,7 @@ end
 get("/dynamic/:alice/:bob") do
  @num_dice = params.fetch("alice").to_i
  
- @num_sides = params.fetch("bob").to_i
+ @sides = params.fetch("bob").to_i
  
   @rolls = []
 
